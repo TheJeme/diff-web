@@ -259,7 +259,7 @@ class DiffOutput extends HTMLElement {
     } else {
       statsHtml =
         (adds > 0 ? `<span class="stat add">+${adds} addition${adds !== 1 ? 's' : ''}</span>` : '') +
-        (dels > 0 ? `<span class="stat del">−${dels} deletion${dels !== 1 ? 's' : ''}</span>` : '');
+        (dels > 0 ? `<span class="stat del">-${dels} deletion${dels !== 1 ? 's' : ''}</span>` : '');
     }
 
     this.#root().innerHTML = `
