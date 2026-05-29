@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diff Viewer — Compare Text Differences</title>
+    <meta name="description" content="A simple, fast diff viewer to compare two texts and highlight additions, deletions, and unchanged lines." />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://diff-viewer.example.com/" />
+    <meta property="og:title" content="Diff Viewer — Compare Text Differences" />
+    <meta property="og:description" content="Paste two texts and instantly see what changed — additions, deletions, and unchanged lines highlighted in your browser." />
+    <meta property="og:image" content="https://diff-viewer.example.com/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="Diff Viewer" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Diff Viewer — Compare Text Differences" />
+    <meta name="twitter:description" content="Compare two texts and instantly see what changed." />
+    <meta name="twitter:image" content="https://diff-viewer.example.com/og-image.png" />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1><span class="word-diff">diff</span> viewer</h1>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="editors-grid">
+        <div class="editor-pane">
+          <div class="pane-header">
+            <span class="pane-label label-original">Original</span>
+          </div>
+          <textarea
+            id="original"
+            placeholder="Paste original text here…"
+            spellcheck="false"
+            autocomplete="off"
+            aria-label="Original text"
+          ></textarea>
+        </div>
+
+        <div class="editor-pane">
+          <div class="pane-header">
+            <span class="pane-label label-modified">Modified</span>
+          </div>
+          <textarea
+            id="modified"
+            placeholder="Paste modified text here…"
+            spellcheck="false"
+            autocomplete="off"
+            aria-label="Modified text"
+          ></textarea>
+        </div>
+      </div>
+
+      <div class="toolbar">
+        <button id="compare-btn" class="btn btn-primary">compare</button>
+        <button id="clear-btn" class="btn btn-ghost">clear</button>
+      </div>
+
+      <diff-output id="diff-output" role="region" aria-label="Diff output"></diff-output>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
