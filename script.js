@@ -162,7 +162,6 @@ td { padding: 0; vertical-align: top; }
   width: 100%;
 }
 
-/* Row colours — warm dark */
 tr.insert td       { background: #0b1e10; }
 tr.insert .gutter  { color: #55c26a; background: #0e2613; }
 tr.insert .ln      { background: #081409; color: #1e3a22; }
@@ -197,7 +196,7 @@ class DiffOutput extends HTMLElement {
   compare(original, modified) {
     const origLines = original.split('\n');
     const newLines  = modified.split('\n');
-    const MAX = 3000;
+    const MAX = 6000;
 
     if (origLines.length > MAX || newLines.length > MAX) {
       this.#root().innerHTML =

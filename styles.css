@@ -64,8 +64,6 @@ main {
   padding-block: 1.5rem 3rem;
 }
 
-/* ── Editors — joined, single border ── */
-
 .editors-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
