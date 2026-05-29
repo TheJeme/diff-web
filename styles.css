@@ -6,11 +6,11 @@
 
 :root {
   --bg:       #0f0e0c;
-  --surface:  #161410;
-  --surface2: #1c1a15;
-  --border:   #2b2820;
-  --text:     #e2ddd6;
-  --muted:    #6b6660;
+  --surface:  #181612;
+  --surface2: #211f19;
+  --border:   #3a3730;
+  --text:     #f0ece5;
+  --muted:    #a09890;
   --accent:   #d4863a;
   --add-fg:   #55c26a;
   --del-fg:   #d95858;

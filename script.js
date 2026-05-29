@@ -64,14 +64,14 @@ const SHADOW_CSS = `
   justify-content: center;
   gap: 0.5rem;
   padding: 3.5rem 2rem;
-  color: #3a3730;
+  color: #5a5650;
   font-family: ui-monospace, monospace;
   text-align: center;
-  border: 1px solid #2b2820;
+  border: 1px solid #3a3730;
   border-radius: 2px;
   margin-top: 1px;
 }
-.placeholder p    { font-size: 0.78rem; color: #5a5650; }
+.placeholder p    { font-size: 0.78rem; color: #a09890; }
 
 /* ── Error ── */
 .error {
@@ -91,13 +91,13 @@ const SHADOW_CSS = `
   align-items: center;
   gap: 1.25rem;
   padding: 0.4rem 0.875rem;
-  background: #1c1a15;
-  border: 1px solid #2b2820;
+  background: #211f19;
+  border: 1px solid #3a3730;
   border-bottom: none;
   border-radius: 2px 2px 0 0;
   font-family: ui-monospace, monospace;
   font-size: 0.72rem;
-  color: #6b6660;
+  color: #a09890;
   margin-top: 1px;
 }
 
@@ -108,21 +108,21 @@ const SHADOW_CSS = `
 .copy-btn {
   margin-left: auto;
   background: transparent;
-  border: 1px solid #2b2820;
+  border: 1px solid #3a3730;
   border-radius: 2px;
-  color: #6b6660;
+  color: #a09890;
   font-size: 0.68rem;
   padding: 0.15rem 0.5rem;
   cursor: pointer;
   font-family: inherit;
   transition: background 0.1s, color 0.1s;
 }
-.copy-btn:hover { background: #1c1a15; color: #e2ddd6; border-color: #6b6660; }
+.copy-btn:hover { background: #211f19; color: #f0ece5; border-color: #a09890; }
 
 /* ── Diff table ── */
 .table-wrap {
   overflow: auto;
-  border: 1px solid #2b2820;
+  border: 1px solid #3a3730;
   border-radius: 0 0 2px 2px;
   max-height: 72vh;
   background: #0f0e0c;
@@ -142,10 +142,10 @@ td { padding: 0; vertical-align: top; }
   width: 40px;
   text-align: right;
   padding: 0 8px !important;
-  color: #2e2b25;
+  color: #5a5650;
   user-select: none;
   font-size: 0.68rem;
-  border-right: 1px solid #1c1a15;
+  border-right: 1px solid #211f19;
 }
 
 .gutter {
@@ -173,9 +173,9 @@ tr.delete .ln      { background: #150808; color: #3a1a1a; }
 tr.delete .code    { color: #e5c6c6; }
 
 tr.equal td        { background: #0f0e0c; }
-tr.equal .gutter   { color: #252220; }
-tr.equal .ln       { color: #252220; }
-tr.equal .code     { color: #4a4640; }
+tr.equal .gutter   { color: #4a4640; }
+tr.equal .ln       { color: #4a4640; }
+tr.equal .code     { color: #7a7570; }
 
 tr:hover td { filter: brightness(1.18); }
 `;
